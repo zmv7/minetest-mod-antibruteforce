@@ -1,0 +1,2 @@
+abf.max_auth_fails (Maximum allowed auth fails) int 3
+abf.wait_time (Waiting time in seconds before trying login again) int 300
