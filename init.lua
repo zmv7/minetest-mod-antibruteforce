@@ -1,7 +1,7 @@
 local fails = {}
 
-local max_fails = core.settings:get("abf.max_auth_fails") or 3
-local wait_time = core.settings:get("abf.wait_time") or 300
+local max_fails = tonumber(core.settings:get("abf.max_auth_fails")) or 3
+local wait_time = tonumber(core.settings:get("abf.wait_time")) or 300
 
 core.register_on_authplayer(function(name, ip, is_success)
 	if not (name and ip) then return end
